@@ -1,11 +1,10 @@
 SELECT
   assignments.day as day,
-  count(*) as total_assignments
+  COUNT(assignments.*) as number_of_assignments,
+  SUM(duration)
 FROM
   assignments
 GROUP BY
   day
-HAVING
-  count(*) >= 10
 ORDER BY
-  day ASC;
+  day;

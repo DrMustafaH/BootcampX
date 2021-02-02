@@ -1,6 +1,8 @@
 SELECT
-name, id
-FROM 
-students
+  name,
+  id
+FROM
+  students
 WHERE
-email IS NULL OR phone IS NULL;
+  email IS NULL
+  OR phone IS NULL;

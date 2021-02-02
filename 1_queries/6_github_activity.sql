@@ -1,8 +1,9 @@
 SELECT
-name, email, phone
+  name,
+  email,
+  phone
 FROM
-students
-WHERE 
-github IS NULL
-AND
-end_date IS NOT NULL;
+  students
+WHERE
+  github IS NULL
+  AND end_date IS NOT NULL;

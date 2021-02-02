@@ -1,7 +1,10 @@
 SELECT
-name, id, cohort_id
+  name,
+  id,
+  cohort_id
 FROM
-students
-WHERE end_date IS NULL
+  students
+WHERE
+  end_date IS NULL
 ORDER BY
-cohort_id;
+  cohort_id;

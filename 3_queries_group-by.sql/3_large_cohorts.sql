@@ -1,12 +1,12 @@
 SELECT
-cohorts.name as cohort_name, count(students.*) as student_count
+  cohorts.name as cohort_name,
+  count(students.*) as student_count
 FROM
-cohorts
-JOIN
-students ON cohort_id = cohorts.id
+  cohorts
+  JOIN students ON cohort_id = cohorts.id
 GROUP BY
-cohort_name
+  cohort_name
 HAVING
-count(students.*) >= 18
+  count(students.*) >= 18
 ORDER BY
-student_count;
+  student_count;
